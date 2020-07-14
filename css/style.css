@@ -1,0 +1,106 @@
+html{
+background-color: lightgrey;
+background-color: hsl(0, 0%, 98%);
+}
+
+.attribution {
+  font-size: 11px; text-align: center;
+}
+.attribution a {
+  color: darkblue;
+  color: hsl(228, 45%, 44%);
+}
+
+body{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: darkblue;
+  color: hsl(234, 12%, 34%);
+}
+
+.headertop{
+  font-weight: 200;
+}
+
+.headercenter{
+  font-weight: 600;
+}
+
+.headerbottom{
+  font-weight: 200;
+}
+
+.title{
+  font-weight: 400;
+}
+
+.text{
+  font-weight: 200;
+  font-size: 11px;
+}
+
+img{
+  padding: 5%;
+  float: right;
+  margin-right: 20px;
+  margin-top: 90px;
+  align-self: flex-end;
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  max-width: 1440px;
+}
+
+.card{
+  padding: 30px;
+  margin: 10px;
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 1px 5px 8px rgba(215,217,224,0.75);
+  position: relative;
+}
+
+.card::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+}
+
+.card-push{
+  transform: translateY(50%);
+}
+
+.left::after{
+  background-color: cyan;
+  background-color: hsl(180, 62%, 55%);
+}
+
+.top::after{
+  background-color: red;
+  background-color: hsl(0, 78%, 62%);
+}
+
+.right::after{
+  background-color: blue;
+  background-color: hsl(212, 86%, 64%);
+}
+
+.bottom::after{
+  background-color: orange;
+  background-color: hsl(34, 97%, 64%);
+}
+
+@media (max-width: 775px) {
+  .card-push{
+    transform: translateY(0);
+  }
+}
